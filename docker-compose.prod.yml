@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  microservice:
+    image: web
+    ports:
+      - 8080
