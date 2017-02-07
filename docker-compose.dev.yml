@@ -2,6 +2,6 @@ version: "2"
 
 services:
   microservice:
-    command: nodemon --inspect=5555
+    command: nodemon  --inspect=5555
     ports:
       - 5555:5555

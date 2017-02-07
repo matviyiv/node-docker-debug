@@ -5,12 +5,16 @@
   "main": "./src/index.js",
   "scripts": {
     "debug": "docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml --build -d up",
-    "prod": "docker-compose -f docker-compose.prod.yml --buil -d up"
+    "prod": "docker-compose -f docker-compose.prod.yml --buil -d up",
+    "start": "node ./src/index.js"
   },
   "keywords": [
     "node",
     "docker"
   ],
   "author": "Nazar Matviyiv",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^7.0.3"
+  }
 }

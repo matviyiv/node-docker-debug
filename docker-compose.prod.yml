@@ -2,6 +2,6 @@ version: "2"
 
 services:
   microservice:
-    image: web
+    build: .
     ports:
       - 8080
