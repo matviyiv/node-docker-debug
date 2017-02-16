@@ -3,5 +3,6 @@ version: "2"
 services:
   microservice:
     build: .
+    command: node index.js
     ports:
-      - 8080
+      - 8080:8080

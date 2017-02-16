@@ -2,6 +2,8 @@ version: "2"
 
 services:
   microservice:
-    command: nodemon  --inspect=5555
+    command: nodemon -L --inspect=5555 ./src/index.js
+    volumes:
+      - ./src:/usr/src/app/src
     ports:
       - 5555:5555

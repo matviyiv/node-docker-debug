@@ -4,8 +4,11 @@
   "description": "Develop and debug node.js inside docker container",
   "main": "./src/index.js",
   "scripts": {
-    "debug": "docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml --build -d up",
-    "prod": "docker-compose -f docker-compose.prod.yml --buil -d up",
+    "debug": "docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml up --build -d",
+    "debug:stop": "docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml down -v",
+    "debug:log": "docker-compose -f docker-compose.prod.yml -f docker-compose.dev.yml logs -f microservice",
+    "prod": "docker-compose -f docker-compose.prod.yml up --buil -d",
+    "prod:stop": "docker-compose -f docker-compose.prod.yml down",
     "start": "node ./src/index.js"
   },
   "keywords": [
